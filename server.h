@@ -4,6 +4,7 @@
 #include <QWidget>
 #include <QTcpServer>
 #include <QDebug>
+#include <QtNetwork>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class Server; }
@@ -22,6 +23,7 @@ private:
 
 private slots:
     void sendRandomMessage();
+
 private:
     Ui::Server *ui;
     //socket servidor
